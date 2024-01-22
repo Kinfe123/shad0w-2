@@ -44,7 +44,7 @@ const LandingNav = () => {
   }
 
   return (
-    <div className=" py-4 flex justify-center items-center font-heading2 rounded-2xl [--duration:500ms]  [transform:translateZ(0)]">
+    <div className=" py-4 flex justify-center items-center font-heading2 font-light rounded-2xl [--duration:500ms]  [transform:translateZ(0)]">
       <nav className="mx-auto bg-transparent relative backdrop-blur-lg rounded-2xl border border-black/10 p-0  pb-[3px] py-[2px] dark:border-gray-600 shadow-sm ">
         <div
           className={cn(
