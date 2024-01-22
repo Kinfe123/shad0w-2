@@ -11,6 +11,7 @@ import { MileStoneDemo } from "@/components/milestone/milestone-view"
 import { ScrollProvider } from "@/components/providers/scroll-view"
 import Social from "@/components/socials"
 import { WavyBackgroundDemo } from "@/components/wave-bg-view"
+import StartUpDemo from "@/components/startup-demo/startup-demo"
 
 export default function IndexPage() {
   return (
@@ -50,6 +51,11 @@ export default function IndexPage() {
 
             <HorizontalScrollCarousel />
           </div>
+        </div>
+
+        <div>
+          <StartUpDemo />
+
         </div>
         {/* <div className='mx-auto flex justify-center items-center'>
         <Social />

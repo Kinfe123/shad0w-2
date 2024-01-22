@@ -14,13 +14,14 @@
     "format:check": "prettier --check \"**/*.{ts,tsx,mdx}\" --cache"
   },
   "dependencies": {
-    "@studio-freight/react-lenis": "0.0.36",
     "@headlessui/react": "^1.7.18",
     "@heroicons/react": "^2.1.1",
     "@radix-ui/react-slot": "^1.0.2",
+    "@studio-freight/react-lenis": "0.0.36",
     "class-variance-authority": "^0.4.0",
     "clsx": "^1.2.1",
     "framer-motion": "^10.18.0",
+    "gsap": "^3.12.5",
     "lucide-react": "0.105.0-alpha.4",
     "next": "^13.4.8",
     "next-themes": "^0.2.1",
