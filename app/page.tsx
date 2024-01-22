@@ -44,8 +44,8 @@ export default function IndexPage() {
         </div>
 
         <div className=" grid grid-cols-2 gap-1">
-          <div className="flex  justify-center items-center bg-transparent px-10">
-            <p className="d:text-4xl font-heading2 lg:text-6xl xl:text-[12rem] font-medium bg-gradient-to-tr from-[#E0B379] to-[#e8eaed] bg-clip-text text-transparent">We have <br /> made everything for you</p>
+          <div className="mt-[-500x] flex  justify-center items-center bg-transparent px-10">
+            <p className="d:text-4xl mt-[-700px] font-heading2 lg:text-6xl xl:text-[12rem] font-medium bg-gradient-to-tr from-[#E0B379] to-[#e8eaed] bg-clip-text text-transparent">We have <br /> made everything for you</p>
           </div>
           <div className="overflow-clip">
 
