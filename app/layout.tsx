@@ -5,6 +5,7 @@ import localFont from "next/font/local"
 import { siteConfig } from "@/config/site"
 import { fontSans } from "@/lib/fonts"
 import { cn } from "@/lib/utils"
+import NavbarSticky from "@/components/nav-bar-sticky"
 import LenisProvider from "@/components/providers/lenis-provider"
 import { SiteHeader } from "@/components/site-header"
 import { TailwindIndicator } from "@/components/tailwind-indicator"
@@ -55,7 +56,8 @@ export default function RootLayout({ children }: RootLayoutProps) {
         >
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
             <div className="relative flex min-h-screen flex-col">
-              <SiteHeader />
+              {/* <SiteHeader /> */}
+              <NavbarSticky />
               <div className="flex-1">
                 <LenisProvider>{children}</LenisProvider>
               </div>
