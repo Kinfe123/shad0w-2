@@ -60,13 +60,13 @@ export const HappyRect = () => {
             y: "-50%",
             x: "-50%",
           }}
-          className="absolute  left-1/2 top-1/2 bg-gradient-to-tr from-[#E0B379] to-[#e8eaed] bg-clip-text text-transparent  font-heading2 text-center  leading-tight text-dark text-[20rem]"
+          className="absolute  left-1/2 top-1/2 space-y-[-100px]  bg-gradient-to-tr from-[#E0B379] to-[#e8eaed] bg-clip-text text-transparent  font-heading2 text-center  leading-[1] text-dark text-[20rem]"
         >
           PROUD 
           
           <br />
           <span className="">
-          PRODUCT.
+          PRODUCT
 
           </span>
         </motion.p>
