@@ -42,7 +42,7 @@ export const HorizontalScrollCarousel = () => {
     </section>
   );
 };
-
+// @ts-ignore
 const Card = ({ card }) => {
   return (
     <div
