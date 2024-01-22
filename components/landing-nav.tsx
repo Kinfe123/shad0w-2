@@ -62,7 +62,7 @@ const LandingNav = () => {
             left: "0px",
           }}
         ></div>
-        <div className="absolute inset-0 rounded-full  backdrop-blur-2xl "></div>
+        <div className="absolute inset-0 rounded-2xl  backdrop-blur-2xl "></div>
         <div className="relative">
           <div
             className={cn(
@@ -102,7 +102,7 @@ const LandingNav = () => {
                       whileInView={{ opacity: 1 }}
                       transition={{ duration: 0.3 }}
                       // viewport={{ once: false }}
-                      className=" absolute inset-0 -z-10 rounded-full  bg-gradient-to-tr from-accent-2/50 to-accent-2/20 border-2 pt-5 "
+                      className=" absolute inset-0 -z-10 rounded-2xl  bg-gradient-to-tr from-accent-2/50 to-accent-2/20 border-2 pt-5 "
                     />
                   )}
                 </button>
@@ -121,12 +121,12 @@ const LandingNav = () => {
                       " text-black/80  dark:text-white/75 "
                   )}
                 >
-                  Career{" "}
+                  About{" "}
                   <span className=" inline text-mute-foreground dark:text-white rounded-full pt-5 mb-4 font-heading2"></span>
                   {currentSelection === "Career" && (
                     <motion.div
                       layoutId="scroll-nav"
-                      className=" absolute inset-0 -z-10 pt-4 rounded-full bg-gradient-to-tr from-accent-2/50  border-2 to-accent-2/20 "
+                      className=" absolute inset-0 -z-10 pt-4 rounded-2xl bg-gradient-to-tr from-accent-2/50  border-2 to-accent-2/20 "
                     />
                   )}
                 </button>
@@ -148,7 +148,7 @@ const LandingNav = () => {
                   {currentSelection === "Blog" && (
                     <motion.div
                       layoutId="scroll-nav"
-                      className="absolute inset-0 -z-10 rounded-full  bg-gradient-to-tr from-accent-2/50 to-accent-2/20  border-2  pt-5 "
+                      className="absolute inset-0 -z-10 rounded-2xl  bg-gradient-to-tr from-accent-2/50 to-accent-2/20  border-2  pt-5 "
                     />
                   )}
                 </button>
@@ -174,7 +174,7 @@ const LandingNav = () => {
                     <div className="bg-black inline p-[1px] dark:h-[25px] dark:w-[1px] dark:bg-muted-foreground mr-5"></div>
                     <AnimatePresence>
 
-                      <button className=" font-heading2 mr-1 group group-hover:before:duration-500 group-hover:after:duration-500 after:duration-500 hover:border-rose-300 hover:before:[box-shadow:_20px_20px_20px_30px_#a21caf] duration-500 before:duration-500 hover:duration-500 underline-offset-2 hover:after:-right-8 hover:before:right-12 hover:before:-bottom-8 hover:before:blur hover:underline hover:underline-offset-4  origin-left hover:decoration-2 hover:text-rose-300 relative bg-neutral-800 h-12 w-32 border text-left p-3 text-gray-50 text-base font-bold rounded-2xl  overflow-hidden  before:absolute before:w-12 before:h-12 before:content[''] before:right-1 before:top-1 before:z-10 before:bg-violet-500 before:rounded-full before:blur-lg  after:absolute after:z-10 after:w-20 after:h-20 after:content['']  after:bg-rose-300 after:right-8 after:top-3 after:rounded-full after:blur-lg">
+                      <button className=" font-heading2 mr-1 group group-hover:before:duration-500 group-hover:after:duration-500 after:duration-500 hover:border-rose-300 hover:before:[box-shadow:_20px_20px_20px_30px_#a21caf] duration-500 before:duration-500 hover:duration-500 underline-offset-2 hover:after:-right-8 hover:before:right-12 hover:before:-bottom-8 hover:before:blur hover:underline hover:underline-offset-4  origin-left hover:decoration-2 hover:text-rose-300 relative bg-neutral-800 h-[2.7rem] w-32 border text-left p-3 text-gray-50 text-base font-bold rounded-2xl  overflow-hidden  before:absolute before:w-12 before:h-12 before:content[''] before:right-1 before:top-1 before:z-10 before:bg-violet-500 before:rounded-full before:blur-lg  after:absolute after:z-10 after:w-20 after:h-20 after:content['']  after:bg-rose-300 after:right-8 after:top-3 after:rounded-full after:blur-lg">
                         Apply
                       </button>
                     </AnimatePresence>
