@@ -10,6 +10,7 @@ import LenisProvider from "@/components/providers/lenis-provider"
 import { SiteHeader } from "@/components/site-header"
 import { TailwindIndicator } from "@/components/tailwind-indicator"
 import { ThemeProvider } from "@/components/theme-provider"
+import BlendThought from "@/components/mask-hovers/mask-hover"
 
 const fontHeading = localFont({
   src: "../public/fonts/cals.ttf",
@@ -64,6 +65,9 @@ export default function RootLayout({ children }: RootLayoutProps) {
             </div>
             <TailwindIndicator />
           </ThemeProvider>
+
+          
+        <BlendThought />
         </body>
       </html>
     </>
