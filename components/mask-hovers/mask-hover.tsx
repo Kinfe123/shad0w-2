@@ -18,11 +18,10 @@ export default function BlendThought() {
   const [isHovered, setIsHovered] = useState(false)
   const positions : MousePosition = useMousePosition()
   const scrol= useScrollPosition()
-  console.log('The scrol poistion : ' , scrol)
+
   const {x , y} = positions
 
-  console.log('THe direction of x adn y are: ' , x   ,  y)
-  console.log('THE hover state is : ', isHovered)
+
   const size = isHovered ? 400 : 60
 
   return (
