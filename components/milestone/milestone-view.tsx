@@ -1,8 +1,6 @@
 "use client"
 
 import React from "react"
-
-import Background from "../background/background"
 import { HeroParallax } from "./milestones"
 
 export function MileStoneDemo() {
