@@ -60,9 +60,7 @@ export default function IndexPage() {
             <StartUpDemo />
           </div>
           <div></div>
-          {/* <div className='mx-auto flex justify-center items-center'>
-        <Social />
-      </div> */}
+    
         </section>
       </ScrollProvider>
       {/* to be fixed */}
