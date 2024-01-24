@@ -1,5 +1,3 @@
-import Link from "next/link"
-
 import ShiftingCountdown from "@/components/countdown"
 import CountDownTimerHeader from "@/components/countdown-header"
 import GetStarted from "@/components/get-start"
@@ -7,12 +5,10 @@ import { HappyRect } from "@/components/happy-rectangle"
 import HeroSection from "@/components/hero-sec"
 import { HorizontalScrollCarousel } from "@/components/horizontal-crsl"
 import Intro from "@/components/intros"
-import BlendThought from "@/components/mask-hovers/mask-hover"
 import { MileStoneDemo } from "@/components/milestone/milestone-view"
 import { ScrollProvider } from "@/components/providers/scroll-view"
-import Social from "@/components/socials"
 import StartUpDemo from "@/components/startup-demo/startup-demo"
-import { WavyBackgroundDemo } from "@/components/wave-bg-view"
+
 
 export default function IndexPage() {
   return (
