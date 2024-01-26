@@ -1,6 +1,7 @@
 import ShiftingCountdown from "@/components/countdown"
 import CountDownTimerHeader from "@/components/countdown-header"
 import GetStarted from "@/components/get-start"
+import { LayoutGridDemo } from "@/components/grid-layout-view"
 import { HoveryCard } from "@/components/gridy-list"
 import { HappyRect } from "@/components/happy-rectangle"
 import HeroSection from "@/components/hero-sec"
@@ -51,7 +52,9 @@ export default function IndexPage() {
               <HorizontalScrollCarousel />
             </div>
           </div>
-
+          <div>
+            <LayoutGridDemo />
+          </div>
           <div>
             <HoveryCard />
           </div>
