@@ -1,6 +1,7 @@
 import ShiftingCountdown from "@/components/countdown"
 import CountDownTimerHeader from "@/components/countdown-header"
 import GetStarted from "@/components/get-start"
+import { HoveryCard } from "@/components/gridy-list"
 import { HappyRect } from "@/components/happy-rectangle"
 import HeroSection from "@/components/hero-sec"
 import { HorizontalScrollCarousel } from "@/components/horizontal-crsl"
@@ -8,7 +9,6 @@ import Intro from "@/components/intros"
 import { MileStoneDemo } from "@/components/milestone/milestone-view"
 import { ScrollProvider } from "@/components/providers/scroll-view"
 import StartUpDemo from "@/components/startup-demo/startup-demo"
-
 
 export default function IndexPage() {
   return (
@@ -53,10 +53,11 @@ export default function IndexPage() {
           </div>
 
           <div>
+            <HoveryCard />
+          </div>
+          <div>
             <StartUpDemo />
           </div>
-          <div></div>
-    
         </section>
       </ScrollProvider>
       {/* to be fixed */}
