@@ -55,9 +55,9 @@ export default function IndexPage() {
           <div>
             <LayoutGridDemo />
           </div>
-          <div>
+          {/* <div>
             <HoveryCard />
-          </div>
+          </div> */}
           <div>
             <StartUpDemo />
           </div>

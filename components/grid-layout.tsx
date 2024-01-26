@@ -3,6 +3,7 @@ import React, { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
+import { HoveryCard } from "./gridy-list";
 
 type Card = {
   id: number;
@@ -35,15 +36,16 @@ export const LayoutGrid = ({ cards }: { cards: Card[] }) => {
               card.className,
               "relative overflow-hidden",
               selected?.id === card.id
-                ? "rounded-lg cursor-pointer absolute inset-0 h-1/2 w-full md:w-1/2 m-auto z-50 flex justify-center items-center flex-wrap flex-col"
+                ? "rounded-lg cursor-pointer absolute inset-0 h-1/2 w-full m-auto z-50 flex justify-center items-center flex-wrap flex-col"
                 : lastSelected?.id === card.id
                 ? "z-40 bg-white rounded-xl h-full w-full"
-                : "bg-white rounded-xl h-full w-full"
+                : "bg-gradient-to-br from-white/30 to-transparent rounded-xl h-full w-full"
             )}
             layout
           >
-            {selected?.id === card.id && <SelectedCard selected={selected} />}
-            <BlurImage card={card} />
+            {/* {selected?.id === card.id && <SelectedCard selected={selected} />}
+            <BlurImage card={card} /> */}
+            <HoveryCard />
           </motion.div>
         </div>
       ))}
