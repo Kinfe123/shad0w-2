@@ -20,7 +20,7 @@ export default function Intro() {
   useLenis(({ scroll }: any) => {
     setScrollY(scroll);
   });
-  console.log('THe scrol y is: ' , scrollY)
+  
 
   const refContainer = useRef<HTMLDivElement>(null);
   const numOfPages = 3;

@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useRef, useEffect } from "react";
 import { LayoutGrid } from "./grid-layout";
-import { HoveryCard } from "./gridy-list";
+
 
 export function LayoutGridDemo() {
   return (
@@ -68,7 +68,7 @@ const cards = [
     content: 'Some Mode - Clear',
     className: "md:col-span-2",
     thumbnail:
-      "https://images.unsplash.com/photo-1476231682828-37e571bc172f?q=80&w=3474&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "/startup5.jpg",
   },
   {
     id: 2,
