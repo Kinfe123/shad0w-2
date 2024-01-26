@@ -7,7 +7,7 @@ import { HoveryCard } from "./gridy-list";
 
 type Card = {
   id: number;
-  content: JSX.Element | React.ReactNode | string;
+  content:  string;
   className: string;
   thumbnail: string;
 };
@@ -45,7 +45,7 @@ export const LayoutGrid = ({ cards }: { cards: Card[] }) => {
           >
             {/* {selected?.id === card.id && <SelectedCard selected={selected} />}
             <BlurImage card={card} /> */}
-            <HoveryCard />
+            <HoveryCard imgUrl={card.thumbnail} description={card.content ?? ""} title={''}/>
           </motion.div>
         </div>
       ))}
