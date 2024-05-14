@@ -44,8 +44,8 @@ const LandingNav = () => {
   }
 
   return (
-    <div className=" py-4 flex justify-center items-center font-heading2 font-light rounded-2xl [--duration:500ms]  [transform:translateZ(0)]">
-      <nav className="mx-auto bg-transparent relative backdrop-blur-lg rounded-2xl border border-black/10 p-0  pb-[3px] py-[2px] dark:border-gray-600 shadow-sm ">
+    <div className="py-4 flex justify-center items-center font-heading2 font-light rounded-2xl [--duration:500ms]  [transform:translateZ(0)]">
+      <nav className="mx-auto bg-transparent relative backdrop-blur-lg rounded-2xl border border-black/10 p-0  py-[9px] dark:border-gray-600 shadow-sm ">
         <div
           className={cn(
             "dark:bg-transparent dark:blur-xl absolute bottom-0 left-0 h-1/2 w-[var(--width)] translate-x-2 bg-transparent blur-2xl rounded-2xl transition-[width,transform] duration-500",
@@ -159,9 +159,6 @@ const LandingNav = () => {
               <li className="hidden md:block">
                 <Link href="/" target="_blank">
                   <motion.div
-                    // initial={{ x: -10, opacity: 0 }}
-                    // animate={{ y: 0, opacity: 1 }}
-                    // exit={{opacity:1}}
                     initial={{ x: 100, opacity: 0 }}
                     animate={{ x: 0, opacity: 1 }}
                     exit={{ x: -100, opacity: 0 }}
@@ -171,10 +168,10 @@ const LandingNav = () => {
                     // variants={animat}
                     className="relative"
                   >
-                    <div className="bg-black inline p-[1px] dark:h-[25px] dark:w-[1px] dark:bg-muted-foreground mr-5"></div>
+                    <div className="bg-black inline p-[1px] dark:h-[30px] mb-10 dark:w-[1px] dark:bg-muted-foreground mx-8"> </div>
                     <AnimatePresence>
 
-                      <button className=" font-heading2 mr-1 group group-hover:before:duration-500 group-hover:after:duration-500 after:duration-500 hover:border-rose-300 hover:before:[box-shadow:_20px_20px_20px_30px_#a21caf] duration-500 before:duration-500 hover:duration-500 underline-offset-2 hover:after:-right-8 hover:before:right-3 hover:before:-bottom-8 hover:before:blur hover:underline hover:underline-offset-4  origin-left hover:decoration-2 hover:text-rose-300 relative bg-neutral-800 h-[2.7rem] w-32 border text-left p-3 text-gray-50 text-base font-bold rounded-2xl  overflow-hidden  before:absolute before:w-12 before:h-12 before:content[''] before:right-1 before:top-1 before:z-10 before:bg-violet-500 before:rounded-full before:blur-lg  after:absolute after:z-10 after:w-20 after:h-20 after:content['']  after:bg-rose-300 after:right-8 after:top-3 after:rounded-full after:blur-lg">
+                      <button className=" font-heading2 mr-1 group group-hover:before:duration-500 group-hover:after:duration-500 after:duration-500 hover:border-rose-300 hover:before:[box-shadow:_20px_20px_20px_30px_#a21caf] duration-500 before:duration-500 hover:duration-500 underline-offset-2 hover:after:-right-8 hover:before:right-3 hover:before:-bottom-8 hover:before:blur hover:underline hover:underline-offset-4  origin-left hover:decoration-2 hover:text-rose-300 relative bg-neutral-800 h-[3rem] w-32 border text-left p-3 text-gray-50 text-base font-bold rounded-2xl  overflow-hidden  before:absolute before:w-12 before:h-12 before:content[''] before:right-1 before:top-1 before:z-10 before:bg-violet-500 before:rounded-full before:blur-lg  after:absolute after:z-10 after:w-20 after:h-20 after:content['']  after:bg-rose-300 after:right-8 after:top-3 after:rounded-full after:blur-lg">
                         Apply
                       </button>
                     </AnimatePresence>
