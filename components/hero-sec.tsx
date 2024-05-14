@@ -120,7 +120,7 @@ export default function HeroSection() {
           </div>
 
           <div className="mx-auto max-w-6xl py-32 sm:py-48 lg:py-36">
-            <div className="hidden sm:mb-8 sm:flex sm:justify-center">
+            <div className="hidden sm:mb-8 sm:flex sm:justify-start">
               <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-[#e8eaed]/80 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
                 Announcing our next round of funding.{" "}
                 <a href="#" className="font-semibold text-indigo-600">
@@ -164,7 +164,7 @@ export default function HeroSection() {
                 lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
                 fugiat aliqua.
               </p>
-              <div className="mt-10 flex items-left justify-left gap-x-6">
+              <div className="mt-10 flex items-center justify-left gap-x-6">
                 {/* <div>
                 <Buttons title='Explore'/>
             </div> */}
@@ -173,7 +173,7 @@ export default function HeroSection() {
                 </button>
                 <a
                   href="#"
-                  className="text-sm font-semibold leading-6 text-gray-900"
+                  className="text-sm font-semibold leading-6 text-gray-300"
                 >
                   Learn more <span aria-hidden="true">→</span>
                 </a>
