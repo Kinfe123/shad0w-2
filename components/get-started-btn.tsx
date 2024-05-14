@@ -1,11 +1,12 @@
 import styles from '../components/buttons-shiny/get-started-btn.module.css'
 import { cn } from '@/lib/utils'
+import { Button } from './ui/button'
 const GetStartedBtn = () => {
   return (
-    <div>
-      <button className={cn(styles.btnio , 'font-heading2 ml-[-100px]')}>
+    <div className='flex items-center justify-center pr-4'>
+      <Button className={cn(styles.btnio , 'font-heading2 ml-[-100px] ')}>
         Go
-        <div className={cn(styles.icon)}>
+        <div className={cn(styles.icon , 'bg-transparent')}>
           <svg
             height="24"
             width="24"
@@ -19,7 +20,7 @@ const GetStartedBtn = () => {
             ></path>
           </svg>
         </div>
-      </button>
+      </Button>
     </div>
   )
 }
