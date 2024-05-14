@@ -1,3 +1,7 @@
+@font-face {
+  font-family: heading3;
+  src: url('../../public/fonts/LR.ttf');
+}
 @keyframes background-pan {
     from {
       background-position: 0% center;
@@ -64,7 +68,9 @@
         var(--purple));
     background-size: 200%;
     -webkit-background-clip: text;
+    text-align: left;
     /* font-size: 40px; */
     -webkit-text-fill-color: transparent;
     white-space: nowrap;
+    font-family: heading3;
   }

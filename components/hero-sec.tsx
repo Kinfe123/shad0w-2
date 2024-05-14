@@ -119,7 +119,7 @@ export default function HeroSection() {
             />
           </div>
 
-          <div className="mx-auto max-w-4xl py-32 sm:py-48 lg:py-36">
+          <div className="mx-auto max-w-6xl py-32 sm:py-48 lg:py-36">
             <div className="hidden sm:mb-8 sm:flex sm:justify-center">
               <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-[#e8eaed]/80 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
                 Announcing our next round of funding.{" "}
@@ -150,25 +150,25 @@ export default function HeroSection() {
 
               <motion.h1
                 variants={FADE_UP_ANIMATION_VARIANTS}
-                className="text-4xl font-bold font-heading tracking-tight text-[#e8eaed] sm:text-8xl"
+                className="text-8xl font-bold  tracking-tight text-[#e8eaed] sm:text-[9rem]"
               >
-                <span className={cn(styles.magicText)}>Armada Ventures</span>{" "}
+                <span className={cn(styles.magicText)}>SHADOW VENTURES</span>{" "}
                 <br />
-                <span className="font-heading2 bg-gradient-to-tr from-[#E0B379] to-[#e8eaed] bg-clip-text text-transparent">
+                <span className="font-heading2 text-center bg-gradient-to-tr from-[#E0B379] to-[#e8eaed] bg-clip-text text-transparent">
                   IDEA <span className="mx-1"></span>TO{" "}
                   <span className="mx-1"></span> PRODUCT.
                 </span>
               </motion.h1>
-              <p className="mt-6 text-lg leading-8 text-gray-600">
+              <p className="mt-6 text-lg leading-8 text-gray-500 text-left max-w-3xl font-sans">
                 Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
                 lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
                 fugiat aliqua.
               </p>
-              <div className="mt-10 flex items-center justify-center gap-x-6">
+              <div className="mt-10 flex items-left justify-left gap-x-6">
                 {/* <div>
                 <Buttons title='Explore'/>
             </div> */}
-                <button className=" font-heading2 group group-hover:before:duration-500 group-hover:after:duration-500 after:duration-500 hover:border-rose-300 hover:before:[box-shadow:_20px_20px_20px_30px_#a21caf] duration-500 before:duration-500 hover:duration-500 underline-offset-2 hover:after:-right-8 hover:before:right-12 hover:before:-bottom-8 hover:before:blur hover:underline hover:underline-offset-4  origin-left hover:decoration-2 hover:text-rose-300 relative bg-neutral-800 h-16 w-64 border text-left p-3 text-gray-50 text-base font-bold rounded-lg  overflow-hidden  before:absolute before:w-12 before:h-12 before:content[''] before:right-1 before:top-1 before:z-10 before:bg-violet-500 before:rounded-full before:blur-lg  after:absolute after:z-10 after:w-20 after:h-20 after:content['']  after:bg-rose-300 after:right-8 after:top-3 after:rounded-full after:blur-lg">
+                <button className="before:content[''] after:content[''] group relative h-16 w-64 origin-left overflow-hidden rounded-lg border bg-neutral-800 p-3 text-left font-heading2 text-base font-bold text-gray-50  underline-offset-2 duration-500 before:absolute before:right-1 before:top-1 before:z-10 before:h-12 before:w-12 before:rounded-full before:bg-violet-500 before:blur-lg before:duration-500 after:absolute after:right-8  after:top-3  after:z-10 after:h-20 after:w-20 after:rounded-full after:bg-rose-300 after:blur-lg after:duration-500 hover:border-rose-300 hover:text-rose-300 hover:underline  hover:decoration-2 hover:underline-offset-4 hover:duration-500 hover:before:-bottom-8 hover:before:right-12  hover:before:blur hover:before:[box-shadow:_20px_20px_20px_30px_#a21caf] hover:after:-right-8 group-hover:before:duration-500 group-hover:after:duration-500">
                   Apply
                 </button>
                 <a
@@ -179,7 +179,9 @@ export default function HeroSection() {
                 </a>
               </div>
             </div>
-          </div>
+            </div>
+
+
           <canvas
             className="bg-skin-base pointer-events-none absolute inset-0"
             id="canvas"

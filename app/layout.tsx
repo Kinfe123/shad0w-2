@@ -12,13 +12,17 @@ import { TailwindIndicator } from "@/components/tailwind-indicator"
 import { ThemeProvider } from "@/components/theme-provider"
 import BlendThought from "@/components/mask-hovers/mask-hover"
 
+const fontHeading2 = localFont({
+  src: "../public/fonts/boogy.woff2",
+  variable: "--font-heading",
+})
 const fontHeading = localFont({
   src: "../public/fonts/cals.ttf",
   variable: "--font-heading2",
 })
-const fontHeading2 = localFont({
-  src: "../public/fonts/boogy.woff2",
-  variable: "--font-heading",
+const fontHeading3 = localFont({
+  src: "../public/fonts/LR.ttf",
+  variable: "--font-heading3",
 })
 
 export const metadata: Metadata = {
@@ -52,6 +56,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
             "min-h-screen bg-background font-sans antialiased",
             fontHeading.variable,
             fontHeading2.variable,
+            fontHeading3.variable,
             fontSans.variable
           )}
         >
