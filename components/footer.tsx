@@ -3,15 +3,15 @@ import Link from "next/link"
 
 export function Footer() {
   return (
-    <footer className="bg-gray-900 text-gray-400 py-12 sm:py-16">
+    <footer className="bg-gradient-to-tr from-transparent via-transparent/5 to-transparent/10 text-gray-400 py-12 sm:py-16">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         <div className="flex flex-col items-start">
           <div className="flex items-center mb-4">
             <MountainIcon className="h-8 w-8 text-gray-400 mr-2" />
-            <span className="text-lg font-semibold text-gray-200">Acme Inc.</span>
+            <span className="text-lg font-semibold text-gray-200 font-heading3 md:text-2xl">SHADOW.</span>
           </div>
           <p className="text-sm leading-relaxed">
-            Acme Inc. is a leading provider of innovative solutions for businesses of all sizes.
+            SHADOW Inc. is a leading provider of innovative solutions for businesses of all sizes.
           </p>
         </div>
         <div className="flex flex-col items-start">
