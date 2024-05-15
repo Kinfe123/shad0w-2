@@ -44,7 +44,7 @@ export function Footer() {
           </p>
         </div>
         <div className="flex flex-col items-start">
-          <h4 className="mb-4 font-semibold text-gray-200 font-heading2">Quick Links</h4>
+          <h4 className="mb-4 font-heading2 font-semibold text-gray-200">Quick Links</h4>
           <ul className="space-y-2">
             {QUICK_LINKS.map(({ title, link }) => (
               <li>
@@ -59,7 +59,7 @@ export function Footer() {
           </ul>
         </div>
         <div className="flex flex-col items-start">
-          <h4 className="mb-4 font-semibold text-gray-200 font-heading2">Resources</h4>
+          <h4 className="mb-4 font-heading2 font-semibold text-gray-200">Resources</h4>
           <ul className="space-y-2">
             {RESOURCES.map(({ title, link }) => (
               <li>
@@ -74,7 +74,7 @@ export function Footer() {
           </ul>
         </div>
         <div className="flex flex-col items-start">
-          <h4 className="mb-4 font-semibold text-gray-200 font-heading2">Follow Us</h4>
+          <h4 className="mb-4 font-heading2 font-semibold text-gray-200">Follow Us</h4>
           <div className="flex space-x-4">
             {SOCIAL_MEDIAS.map(({ icon, link }) => (
               <Link

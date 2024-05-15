@@ -1,5 +1,6 @@
 import ShiftingCountdown from "@/components/countdown"
 import CountDownTimerHeader from "@/components/countdown-header"
+import CTA from "@/components/CTA"
 import GetStarted from "@/components/get-start"
 import { LayoutGridDemo } from "@/components/grid-layout-view"
 import { HappyRect } from "@/components/happy-rectangle"
@@ -56,6 +57,9 @@ export default function IndexPage() {
       
           <div>
             <StartUpDemo />
+          </div>
+          <div>
+            <CTA />
           </div>
         </section>
       </ScrollProvider>
