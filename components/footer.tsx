@@ -1,85 +1,99 @@
 
+import { TwitchIcon } from "lucide-react"
 import Link from "next/link"
 
+type LinkFooterType = {
+  title: string,
+  link?: string,
+  targetBlank?:boolean
+}
+
+const QUICK_LINKS: LinkFooterType[] = [
+  {title:"About" , link:"#" , targetBlank:false},
+  {title:"Contact" , link:"#" , targetBlank:false},
+  {title:"Privacy Policy" , link:"#" , targetBlank:false}
+
+]
+const RESOURCES: LinkFooterType[] = [
+  {title:"Documentation" , link:"#" , targetBlank:false},
+  {title:"Blog" , link:"#" , targetBlank:false},
+  {title:"Tutorial" , link:"#" , targetBlank:false}
+]
+type SocialMediaLink = {
+  icon:() => JSX.Element,
+  link:string,
+
+}
+const SOCIAL_MEDIAS:SocialMediaLink[] = [
+  {icon: (...props) => <TwitterIcon /> , link:'#'},
+  {icon: (...props) => <FacebookIcon /> , link:'#'},
+  {icon: (...props) => <LinkedinIcon /> , link:'#'},
+  {icon: (...props) => <InstagramIcon /> , link:'#'},
+
+
+]
 export function Footer() {
   return (
-    <footer className="bg-gradient-to-tr from-transparent via-transparent/5 to-transparent/10 text-gray-400 py-12 sm:py-16">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+    <footer className="bg-gradient-to-tr from-transparent via-transparent/5 to-transparent/10 py-12 text-gray-400 sm:py-16">
+      <div className="container mx-auto grid grid-cols-1 gap-8 px-4 sm:grid-cols-2 sm:px-6 lg:grid-cols-4 lg:px-8">
         <div className="flex flex-col items-start">
-          <div className="flex items-center mb-4">
-            <MountainIcon className="h-8 w-8 text-gray-400 mr-2" />
-            <span className="text-lg font-semibold text-gray-200 font-heading3 md:text-2xl">SHADOW.</span>
+          <div className="mb-4 flex items-center">
+            <MountainIcon className="mr-2 size-8 text-gray-400" />
+            <span className="font-heading3 text-lg font-semibold text-gray-200 md:text-2xl">SHADOW.</span>
           </div>
           <p className="text-sm leading-relaxed">
-            SHADOW Inc. is a leading provider of innovative solutions for businesses of all sizes.
+            Shadow Inc. is a leading provider of innovative solutions for businesses of all sizes.
           </p>
         </div>
         <div className="flex flex-col items-start">
-          <h4 className="text-gray-200 font-semibold mb-4">Quick Links</h4>
+          <h4 className="mb-4 font-semibold text-gray-200">Quick Links</h4>
           <ul className="space-y-2">
-            <li>
-              <Link className="hover:text-gray-300 transition-colors" href="#">
-                About
+            {QUICK_LINKS.map(({title , link , targetBlank}) => (
+              <Link className="transition-colors hover:text-gray-300" href={link ?? "#"}>
+                  {title}
               </Link>
-            </li>
-            <li>
-              <Link className="hover:text-gray-300 transition-colors" href="#">
-                Contact
-              </Link>
-            </li>
-            <li>
-              <Link className="hover:text-gray-300 transition-colors" href="#">
-                Privacy Policy
-              </Link>
-            </li>
+            ))}
           </ul>
         </div>
         <div className="flex flex-col items-start">
-          <h4 className="text-gray-200 font-semibold mb-4">Resources</h4>
+          <h4 className="mb-4 font-semibold text-gray-200">Resources</h4>
           <ul className="space-y-2">
             <li>
-              <Link className="hover:text-gray-300 transition-colors" href="#">
+              <Link className="transition-colors hover:text-gray-300" href="#">
                 Documentation
               </Link>
             </li>
             <li>
-              <Link className="hover:text-gray-300 transition-colors" href="#">
+              <Link className="transition-colors hover:text-gray-300" href="#">
                 Blog
               </Link>
             </li>
             <li>
-              <Link className="hover:text-gray-300 transition-colors" href="#">
+              <Link className="transition-colors hover:text-gray-300" href="#">
                 Tutorials
               </Link>
             </li>
           </ul>
         </div>
         <div className="flex flex-col items-start">
-          <h4 className="text-gray-200 font-semibold mb-4">Follow Us</h4>
+          <h4 className="mb-4 font-semibold text-gray-200">Follow Us</h4>
           <div className="flex space-x-4">
-            <Link className="hover:text-gray-300 transition-colors" href="#">
-              <TwitterIcon className="h-6 w-6" />
+            {SOCIAL_MEDIAS.map(({icon , link}) => (
+            <Link className="transition-colors hover:text-gray-300" href={link}>
+              {icon()}
             </Link>
-            <Link className="hover:text-gray-300 transition-colors" href="#">
-              <FacebookIcon className="h-6 w-6" />
-            </Link>
-            <Link className="hover:text-gray-300 transition-colors" href="#">
-              <LinkedinIcon className="h-6 w-6" />
-            </Link>
-            <Link className="hover:text-gray-300 transition-colors" href="#">
-              <InstagramIcon className="h-6 w-6" />
-            </Link>
+            ))}
           </div>
         </div>
       </div>
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 mt-8 text-center">
-        <p className="text-sm">© 2024 Acme Inc. All rights reserved.</p>
+      <div className="container mx-auto mt-8 px-4 text-center sm:px-6 lg:px-8">
+        <p className="text-sm">© 2024 Shadow Inc. All rights reserved.</p>
       </div>
     </footer>
   )
 }
 
-function FacebookIcon(props) {
+function FacebookIcon(props:any) {
   return (
     <svg
       {...props}
@@ -99,7 +113,7 @@ function FacebookIcon(props) {
 }
 
 
-function InstagramIcon(props) {
+function InstagramIcon(props:any) {
   return (
     <svg
       {...props}
@@ -121,7 +135,7 @@ function InstagramIcon(props) {
 }
 
 
-function LinkedinIcon(props) {
+function LinkedinIcon(props:any) {
   return (
     <svg
       {...props}
@@ -143,7 +157,7 @@ function LinkedinIcon(props) {
 }
 
 
-function MountainIcon(props) {
+function MountainIcon(props:any) {
   return (
     <svg
       {...props}
@@ -163,7 +177,7 @@ function MountainIcon(props) {
 }
 
 
-function TwitterIcon(props) {
+function TwitterIcon(props:any) {
   return (
     <svg
       {...props}
