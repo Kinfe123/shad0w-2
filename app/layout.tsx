@@ -11,6 +11,7 @@ import { SiteHeader } from "@/components/site-header"
 import { TailwindIndicator } from "@/components/tailwind-indicator"
 import { ThemeProvider } from "@/components/theme-provider"
 import BlendThought from "@/components/mask-hovers/mask-hover"
+import { Footer } from "@/components/footer"
 
 const fontHeading2 = localFont({
   src: "../public/fonts/boogy.woff2",
@@ -62,17 +63,15 @@ export default function RootLayout({ children }: RootLayoutProps) {
         >
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
             <div className="relative flex min-h-screen flex-col">
-              {/* <SiteHeader /> */}
               <NavbarSticky />
               <div className="flex-1">
                 <LenisProvider>{children}</LenisProvider>
               </div>
             </div>
             <TailwindIndicator />
+          <Footer />
           </ThemeProvider>
-
           
-        <BlendThought />
         </body>
       </html>
     </>
