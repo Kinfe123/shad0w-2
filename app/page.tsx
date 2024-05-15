@@ -47,7 +47,7 @@ export default function IndexPage() {
                 We have <br /> made everything for you
               </p>
             </div>
-            <div className="text-clip">
+            <div className="overflow-clip">
               <HorizontalScrollCarousel />
             </div>
           </div>
