@@ -29,7 +29,7 @@ const SOCIAL_MEDIAS: SocialMediaLink[] = [
 ]
 export function Footer() {
   return (
-    <footer className="bg-gradient-to-tr from-transparent via-transparent/5 to-transparent/10 py-12 text-gray-400 sm:py-16">
+    <footer className="bg-gradient-to-tr from-transparent via-transparent/5 to-transparent/10 py-12 text-gray-400 backdrop-blur-lg sm:py-16">
       <div className="container mx-auto grid grid-cols-1 gap-8 px-4 sm:grid-cols-2 sm:px-6 lg:grid-cols-4 lg:px-8">
         <div className="flex flex-col items-start">
           <div className="mb-4 flex items-center">
@@ -44,9 +44,9 @@ export function Footer() {
           </p>
         </div>
         <div className="flex flex-col items-start">
-          <h4 className="mb-4 font-semibold text-gray-200">Quick Links</h4>
+          <h4 className="mb-4 font-semibold text-gray-200 font-heading2">Quick Links</h4>
           <ul className="space-y-2">
-            {QUICK_LINKS.map(({ title, link, targetBlank }) => (
+            {QUICK_LINKS.map(({ title, link }) => (
               <li>
                 <Link
                   className="transition-colors hover:text-gray-300"
@@ -59,7 +59,7 @@ export function Footer() {
           </ul>
         </div>
         <div className="flex flex-col items-start">
-          <h4 className="mb-4 font-semibold text-gray-200">Resources</h4>
+          <h4 className="mb-4 font-semibold text-gray-200 font-heading2">Resources</h4>
           <ul className="space-y-2">
             {RESOURCES.map(({ title, link }) => (
               <li>
@@ -74,7 +74,7 @@ export function Footer() {
           </ul>
         </div>
         <div className="flex flex-col items-start">
-          <h4 className="mb-4 font-semibold text-gray-200">Follow Us</h4>
+          <h4 className="mb-4 font-semibold text-gray-200 font-heading2">Follow Us</h4>
           <div className="flex space-x-4">
             {SOCIAL_MEDIAS.map(({ icon, link }) => (
               <Link
