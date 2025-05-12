@@ -76,7 +76,7 @@
     @apply border-border;
   }
   body {
-    @apply bg-background dark:bg-black/80 text-foreground;
+    @apply overflow-x-hidden bg-background dark:bg-black/80 text-foreground;
     font-feature-settings: "rlig" 1, "calt" 1;
   }
 }
