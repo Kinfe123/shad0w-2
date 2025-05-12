@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils"
 
 import { HoveryCard } from "./gridy-list"
 
-type Card = {
+export type Card = {
   id: number
   title: string
   description: string
