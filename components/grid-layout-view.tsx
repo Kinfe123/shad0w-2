@@ -1,94 +1,86 @@
-"use client";
-import React from "react";
-import { LayoutGrid } from "./grid-layout";
+"use client"
 
+import { LayoutGrid } from "./grid-layout"
 
-export function LayoutGridDemo() {
+export const LayoutGridDemo = () => {
   return (
-    <div className="h-screen py-20 w-full">
+    <div className="h-auto lg:h-screen py-20 w-full">
       <LayoutGrid cards={cards} />
     </div>
-  );
+  )
 }
 
-const SkeletonOne = () => {
+const CardContent = ({
+  title,
+  description,
+}: {
+  title: string
+  description: string
+}) => {
   return (
-    <div>
-      <p className="font-bold text-4xl text-white">House in the woods</p>
-      <p className="font-normal text-base text-white"></p>
+    <div className="border-2 border-red-500">
+      <p className="font-bold text-4xl text-white">{title}</p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-        A serene and tranquil retreat, this house in the woods offers a peaceful
-        escape from the hustle and bustle of city life.
+        {description}
       </p>
     </div>
-  );
-};
-
-const SkeletonTwo = () => {
-  return (
-    <div>
-      <p className="font-bold text-4xl text-white">House above the clouds</p>
-      <p className="font-normal text-base text-white"></p>
-      <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-        Perched high above the world, this house offers breathtaking views and a
-        unique living experience. It&apos;s a place where the sky meets home,
-        and tranquility is a way of life.
-      </p>
-    </div>
-  );
-};
-const SkeletonThree = () => {
-  return (
-    <div>
-      <p className="font-bold text-4xl text-white">Greens all over</p>
-      <p className="font-normal text-base text-white"></p>
-      <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-        A house surrounded by greenery and nature&apos;s beauty. It&apos;s the
-        perfect place to relax, unwind, and enjoy life.
-      </p>
-    </div>
-  );
-};
-const SkeletonFour = () => {
-  return (
-    <div>
-      <p className="font-bold text-4xl text-white">Rivers are serene</p>
-      <p className="font-normal text-base text-white"></p>
-      <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-        A house by the river is a place of peace and tranquility. It&apos;s the
-        perfect place to relax, unwind, and enjoy life.
-      </p>
-    </div>
-  );
-};
+  )
+}
 
 const cards = [
   {
     id: 1,
-    content: 'Some Mode - Clear',
+    title: "House in the woods",
+    description:
+      "A serene and tranquil retreat, this house in the woods offers a peaceful escape from the hustle and bustle of city life.",
+    content: (
+      <CardContent
+        title="House in the woods"
+        description="A serene and tranquil retreat, this house in the woods offers a peaceful escape from the hustle and bustle of city life."
+      />
+    ),
     className: "md:col-span-2",
-    thumbnail:
-      "/startup5.jpg",
+    thumbnail: "/startup5.jpg",
   },
   {
     id: 2,
-    content: "Luncar Eclipse",
+    title: "Lunar Eclipse",
+    description:
+      "Perched high above the world, this house offers breathtaking views and a unique living experience.",
+    content: (
+      <CardContent
+        title="Lunar Eclipse"
+        description="Perched high above the world, this house offers breathtaking views and a unique living experience."
+      />
+    ),
     className: "col-span-1",
-    thumbnail:
-      "/startup3.jpg",
+    thumbnail: "/startup3.jpg",
   },
   {
     id: 3,
-    content:'Astronomical Event',
+    title: "Greens all over",
+    description:
+      "A house surrounded by greenery and nature’s beauty. It's the perfect place to relax.",
+    content: (
+      <CardContent
+        title="Greens all over"
+        description="A house surrounded by greenery and nature’s beauty. It's the perfect place to relax."
+      />
+    ),
     className: "col-span-1",
-    thumbnail:
-      "/startup2.jpg",
+    thumbnail: "/startup2.jpg",
   },
   {
     id: 4,
-    content: 'Pretty Little Fears',
+    title: "Rivers are serene",
+    description: "A house by the river is a place of peace and tranquility.",
+    content: (
+      <CardContent
+        title="Rivers are serene"
+        description="A house by the river is a place of peace and tranquility."
+      />
+    ),
     className: "md:col-span-2",
-    thumbnail:
-      "/startup1.jpg",
+    thumbnail: "/startup1.jpg",
   },
-];
+]

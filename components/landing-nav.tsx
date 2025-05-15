@@ -63,7 +63,7 @@ const LandingNav = () => {
           }}
         ></div>
         <div className="absolute inset-0 rounded-2xl  backdrop-blur-2xl "></div>
-        <div className="relative">
+        <div className="relative w-full">
           <div
             className={cn(
               //dark:from-purple-600 dark:to-orange-400   absolute bottom-0 left-[-40px] opacity-[10px]  h-2/4 w-10 translate-x-2  rounded-full blur-md transition-[width,transform]
@@ -80,7 +80,7 @@ const LandingNav = () => {
               left: "0px",
             }}
           ></div>
-          <ul className="relative flex items-center gap-2">
+          <ul className="relative flex items-center gap-2 ">
             <li className="">
               <Link href="/">
                 <button
@@ -88,7 +88,7 @@ const LandingNav = () => {
                   onMouseOver={() => setCurrentSelection("Home")}
                   onMouseLeave={() => setCurrentSelection(currPath)}
                   className={cn(
-                    "relative px-5 py-3 text-sm font-light text-black/60 transition-[text-shadow,color] duration-200 hover:text-black/80 focus:outline-none dark:text-white/60 dark:hover:text-white/75",
+                    "relative px-2 sm:px-5 py-3 text-sm font-light text-black/60 transition-[text-shadow,color] duration-200 hover:text-black/80 focus:outline-none dark:text-white/60 dark:hover:text-white/75",
                     pathname === "/" && "text-black/80 dark:text-white/75 "
                   )}
                 >
@@ -116,7 +116,7 @@ const LandingNav = () => {
                   onMouseLeave={() => setCurrentSelection(currPath)}
                   type="button"
                   className={cn(
-                    "relative  px-5 py-3 text-black/6 0  text-sm font-light transition-[text-shadow,color] duration-200 hover:text-black/80 focus:outline-none dark:text-white/60 dark:hover:text-white/75 ",
+                    "relative px-2 sm:px-5 py-3 text-black/6 0  text-sm font-light transition-[text-shadow,color] duration-200 hover:text-black/80 focus:outline-none dark:text-white/60 dark:hover:text-white/75 ",
                     pathname === "/career" &&
                       " text-black/80  dark:text-white/75 "
                   )}
@@ -132,14 +132,15 @@ const LandingNav = () => {
                 </button>
               </Link>
             </li>
-            <li className="hidden md:block">
+
+            <li className="">
               <Link href="/blog">
                 <button
                   onMouseOver={() => setCurrentSelection("Blog")}
                   onMouseLeave={() => setCurrentSelection(currPath)}
                   type="button"
                   className={cn(
-                    "relative  px-5 py-3 text-sm font-light text-black/60 transition-[text-shadow,color] duration-200 hover:text-black/80 focus:outline-none dark:text-white/60 dark:hover:text-white/75",
+                    "relative px-2 sm:px-5 py-3 text-sm font-light text-black/60 transition-[text-shadow,color] duration-200 hover:text-black/80 focus:outline-none dark:text-white/60 dark:hover:text-white/75",
                     pathname?.includes("/blog") &&
                       "text-black/80 dark:text-white/75"
                   )}
@@ -156,7 +157,7 @@ const LandingNav = () => {
             </li>
 
             {
-              <li className="hidden md:block">
+              <li className="">
                 <Link href="/" target="_blank">
                   <motion.div
                     initial={{ x: 100, opacity: 0 }}
@@ -168,10 +169,11 @@ const LandingNav = () => {
                     // variants={animat}
                     className="relative"
                   >
-                    <div className="bg-black inline p-[1px] dark:h-[30px] mb-10 dark:w-[1px] dark:bg-muted-foreground mx-8"> </div>
+                    <div className="bg-black inline p-[1px] dark:h-[30px] mb-10 dark:w-[1px] dark:bg-muted-foreground mx-3 sm:mx-8">
+                      {" "}
+                    </div>
                     <AnimatePresence>
-
-                      <button className=" font-heading2 mr-1 group group-hover:before:duration-500 group-hover:after:duration-500 after:duration-500 hover:border-rose-300 hover:before:[box-shadow:_20px_20px_20px_30px_#a21caf] duration-500 before:duration-500 hover:duration-500 underline-offset-2 hover:after:-right-8 hover:before:right-3 hover:before:-bottom-8 hover:before:blur hover:underline hover:underline-offset-4  origin-left hover:decoration-2 hover:text-rose-300 relative bg-neutral-800 h-[3rem] w-32 border text-left p-3 text-gray-50 text-base font-bold rounded-2xl  overflow-hidden  before:absolute before:w-12 before:h-12 before:content[''] before:right-1 before:top-1 before:z-10 before:bg-violet-500 before:rounded-full before:blur-lg  after:absolute after:z-10 after:w-20 after:h-20 after:content['']  after:bg-rose-300 after:right-8 after:top-3 after:rounded-full after:blur-lg">
+                      <button className=" font-heading2 mr-1 group group-hover:before:duration-500 group-hover:after:duration-500 after:duration-500 hover:border-rose-300 hover:before:[box-shadow:_20px_20px_20px_30px_#a21caf] duration-500 before:duration-500 hover:duration-500 underline-offset-2 hover:after:-right-8 hover:before:right-3 hover:before:-bottom-8 hover:before:blur hover:underline hover:underline-offset-4  origin-left hover:decoration-2 hover:text-rose-300 relative bg-neutral-800 h-[3rem] w-28 sm:w-32 border text-left p-3 text-gray-50 text-base font-bold rounded-2xl  overflow-hidden  before:absolute before:w-12 before:h-12 before:content[''] before:right-1 before:top-1 before:z-10 before:bg-violet-500 before:rounded-full before:blur-lg  after:absolute after:z-10 after:w-20 after:h-20 after:content['']  after:bg-rose-300 after:right-8 after:top-3 after:rounded-full after:blur-lg">
                         Apply
                       </button>
                     </AnimatePresence>
