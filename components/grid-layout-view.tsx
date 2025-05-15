@@ -1,7 +1,5 @@
 "use client"
 
-import React from "react"
-
 import { LayoutGrid } from "./grid-layout"
 
 export const LayoutGridDemo = () => {
@@ -32,6 +30,9 @@ const CardContent = ({
 const cards = [
   {
     id: 1,
+    title: "House in the woods",
+    description:
+      "A serene and tranquil retreat, this house in the woods offers a peaceful escape from the hustle and bustle of city life.",
     content: (
       <CardContent
         title="House in the woods"
@@ -43,6 +44,9 @@ const cards = [
   },
   {
     id: 2,
+    title: "Lunar Eclipse",
+    description:
+      "Perched high above the world, this house offers breathtaking views and a unique living experience.",
     content: (
       <CardContent
         title="Lunar Eclipse"
@@ -54,6 +58,9 @@ const cards = [
   },
   {
     id: 3,
+    title: "Greens all over",
+    description:
+      "A house surrounded by greenery and nature’s beauty. It's the perfect place to relax.",
     content: (
       <CardContent
         title="Greens all over"
@@ -65,6 +72,8 @@ const cards = [
   },
   {
     id: 4,
+    title: "Rivers are serene",
+    description: "A house by the river is a place of peace and tranquility.",
     content: (
       <CardContent
         title="Rivers are serene"
