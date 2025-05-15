@@ -36,7 +36,7 @@ export const HappyRect = () => {
         "--opacity-border": opacityBorder,
       })}
       ref={targetRef}
-      className="mt-[50vh] flex h-[500vh] items-start justify-start"
+      className="mt-[50vh] flex h-[500vh]  lg:items-center lg:justify-center xl:items-start  xl:justify-start"
     >
       <div className="sticky top-1/2 left-1/2 min-h-[50rem] min-w-[50rem] -translate-x-1/2 -translate-y-1/2 whitespace-nowrap before:absolute before:inset-0 before:scale-[var(--scale)] before:border-[2.5rem] before:border-[#f1c944] rounded-md before:opacity-[var(--opacity-border)]">
         <motion.p
