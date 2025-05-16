@@ -34,7 +34,7 @@ export default function HeroSection() {
   }, [])
 
   return (
-    <div className="bg-transparent relative w-full  ">
+    <div className="bg-transparent relative w-full ">
       <motion.div
         initial="hidden"
         animate="show"
@@ -51,7 +51,6 @@ export default function HeroSection() {
         {/* <Spotlight fill="#a1adcc" /> */}
 
         <header className="absolute inset-x-0 top-0 z-50">
-        
           <Dialog
             as="div"
             className="lg:hidden"
@@ -119,7 +118,7 @@ export default function HeroSection() {
             />
           </div>
 
-          <div className="mx-auto max-w-6xl py-32 sm:py-48 lg:py-36">
+          <div className="h-screen lg:h-auto mx-auto max-w-6xl  pt-44 lg:py-40">
             <div className="hidden sm:mb-8 sm:flex sm:justify-start">
               <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-[#e8eaed]/80 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
                 Announcing our next round of funding.{" "}
@@ -129,7 +128,8 @@ export default function HeroSection() {
                 </a>
               </div>
             </div>
-            <div className="text-center">
+
+            <div className="w-full md:flex md:flex-col md:justify-start md:items-start">
               <div>
                 <span className={styles.star}>
                   <svg viewBox="0 0 512 512">
@@ -150,21 +150,23 @@ export default function HeroSection() {
 
               <motion.h1
                 variants={FADE_UP_ANIMATION_VARIANTS}
-                className="text-8xl font-bold  tracking-tight text-[#e8eaed] sm:text-[9rem]"
+                className="w-full flex flex-col justify-center items-center text-[2.4rem] xm:text-[2.6rem] sm:text-7xl md:text-8xl lg:text-9xl xl:text-[9rem] font-bold  tracking-tight text-[#e8eaed] "
               >
                 <span className={cn(styles.magicText)}>SHADOW VENTURES</span>{" "}
                 <br />
+                <span className="font-heading2 text-center bg-gradient-to-tr from-[#E0B379] to-[#e8eaed] bg-clip-text text-transparent my-[-0.7rem] sm:my-2">
+                  IDEA &nbsp; TO
+                </span>
                 <span className="font-heading2 text-center bg-gradient-to-tr from-[#E0B379] to-[#e8eaed] bg-clip-text text-transparent">
-                  IDEA <span className="mx-1"></span>TO{" "}
-                  <span className="mx-1"></span> PRODUCT.
+                  P R O D U C T .
                 </span>
               </motion.h1>
-              <p className="mt-6 text-lg leading-8 text-gray-500 text-left max-w-3xl font-sans">
+              <p className="my-12 text-lg leading-8 text-gray-500 text-center md:text-left mx-auto md:mx-0 w-10/12 xm:w-9/12 md:w-auto max-w-3xl font-sans">
                 Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
                 lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
                 fugiat aliqua.
               </p>
-              <div className="mt-10 flex items-center justify-left gap-x-6">
+              <div className="mt-12 sm:my-16 md:mt-8 flex flex-col md:flex-row items-center justify-center gap-y-5 sm:gap-y-0 gap-x-6">
                 {/* <div>
                 <Buttons title='Explore'/>
             </div> */}
@@ -173,14 +175,13 @@ export default function HeroSection() {
                 </button>
                 <a
                   href="#"
-                  className="text-sm font-semibold leading-6 text-gray-300"
+                  className="mt-3 text-sm font-semibold leading-6 text-gray-300"
                 >
                   Learn more <span aria-hidden="true">→</span>
                 </a>
               </div>
             </div>
-            </div>
-
+          </div>
 
           <canvas
             className="bg-skin-base pointer-events-none absolute inset-0"
